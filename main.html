@@ -1,13 +1,52 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script defer src="https://kit.fontawesome.com/a238f11e02.js" crossorigin="anonymous"></script>
+    <title>Lotus Bungalow</title>
+  </head>
+  <body>
+    <header class="w-full lg:h-24 bg-white">
+        <div class="flex w-full items-center justify-between px-5 border-black border-2 lg:hidden fixed top-0 h-28">
+            <img src="" alt="logo">
+            <input type="checkbox" name="" id="check" >
+            <label for="check" class="">
+                <i class="fa-solid fa-bars fa-2x" style="color: #000000;"></i>
+            </label>
+
+        </div>
+      <nav class="w-full h-full fixed max-lg:absolute hidden lg:block bg-white lg:h-24">
+        <div
+          class="lg:flex justify-between w-8/12 m-auto border-b border-gray-500 text-gray-500 hidden"
+        >
+          <p>contactez-nous directement au .........</p>
+          <span><button type="button">USD</button></span>
+        </div>
+       
+        <ul
+          class="lg:flex hidden justify-around lg:w-8/12 w-screen m-auto  text-black font-medium max-lg:flex-col max-lg:h-full max-lg:w-screen max-lg:items-center top-0  max-lg:fixed "
+        >
+          <li><a href="#" class="hover:text-gray-500">ACCEUIL</a></li>
+          <li><a href="#" class="hover:text-gray-500">À PROPOS</a></li>
+          <li><a href="#" class="hover:text-gray-500">BUNGALOWS</a></li>
+          <li class="w-52 max-lg:hidden"><img src="" alt="logo" /></li>
+          <li><a href="#" class="hover:text-gray-500">RESERVATION</a></li>
+          <li><a href="#" class="hover:text-gray-500">BLOG</a></li>
+          <li><a href="#" class="hover:text-gray-500">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main >
+        <section class="flex-col flex justify-around text-center w-full bg-red-800 h-screen items-center">
+            <div class="bg-green-50 m-auto">
+                <h1 class=" text-4xl ">Le Lotus Bungalow</h1>
+                <p class="font-light">Séjournez dans nos Bungalows de Luxe</p>
+
+            </div>
+        </section>
+    </main>
+  </body>
 </html>

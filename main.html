@@ -4,49 +4,337 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <script defer src="https://kit.fontawesome.com/a238f11e02.js" crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script defer src="./main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://kit.fontawesome.com/a238f11e02.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
     <title>Lotus Bungalow</title>
   </head>
-  <body>
-    <header class="w-full lg:h-24 bg-white">
-        <div class="flex w-full items-center justify-between px-5 border-black border-2 lg:hidden fixed top-0 h-28">
-            <img src="" alt="logo">
-            <input type="checkbox" name="" id="check" >
-            <label for="check" class="">
-                <i class="fa-solid fa-bars fa-2x" style="color: #000000;"></i>
-            </label>
+  <body class="">
+    <header class="w-full lg:h-24">
+      <div
+        class="flex w-full items-center justify-between px-5 bg-white z-40 border-2 lg:hidden fixed top-0 h-28"
+      >
+        <!-- <img
+          src="./LE LOTUS/Logo/Logo sans fond.png"
+          class="i"
+          alt="logo"
 
-        </div>
-      <nav class="w-full h-full fixed max-lg:absolute hidden lg:block bg-white lg:h-24">
+        /> -->
+        <div class="logo h-full w-4/12"></div>
+        <input type="checkbox" name="" id="check" />
+        <label for="check" class="burgermenu">
+          <i class="fa-solid fa-bars fa-2x" style="color: #000000"></i>
+        </label>
+      </div>
+      <nav
+        class="lg:w-full w-full h-full fixed max-lg:absolute lg:block bg-white z-40 lg:h-auto max-lg:circle-nav"
+      >
         <div
-          class="lg:flex justify-between w-8/12 m-auto border-b border-gray-500 text-gray-500 hidden"
+          class="lg:flex justify-between w-8/12 m-auto border-b relative border-gray-300 text-gray-300 hidden navbar-top transition-all duration-500 h-7"
         >
-          <p>contactez-nous directement au .........</p>
-          <span><button type="button">USD</button></span>
+          <div
+            class="move-up flex justify-around h-full w-full transition-all duration-500"
+          >
+            <p class="">contact us directly at 034 31 377 32</p>
+            <span
+              ><select name="" id="" class="outline-none">
+                <option value="">USD</option>
+                <option value="">EUR</option>
+                <option value="">MGA</option>
+                <option value="">CNY</option>
+                <option value="">JPY</option>
+              </select></span
+            >
+          </div>
         </div>
-       
+
         <ul
-          class="lg:flex hidden justify-around lg:w-8/12 w-screen m-auto  text-black font-medium max-lg:flex-col max-lg:h-full max-lg:w-screen max-lg:items-center top-0  max-lg:fixed "
+          class="lg:bg-white lg:flex flex lg:flex-row bg-slate-500 items-center justify-around lg:w-8/12 w-1/2 z-50 m-auto text-sm text-black font-medium flex-col h-full top-0 max-lg:fixed right-0 max-lg:circle-submenu"
         >
-          <li><a href="#" class="hover:text-gray-500">ACCEUIL</a></li>
-          <li><a href="#" class="hover:text-gray-500">À PROPOS</a></li>
-          <li><a href="#" class="hover:text-gray-500">BUNGALOWS</a></li>
-          <li class="w-52 max-lg:hidden"><img src="" alt="logo" /></li>
-          <li><a href="#" class="hover:text-gray-500">RESERVATION</a></li>
-          <li><a href="#" class="hover:text-gray-500">BLOG</a></li>
-          <li><a href="#" class="hover:text-gray-500">CONTACT</a></li>
+          <!-- <div class="logo h-1/6 w-4/12"></div> -->
+          <li>
+            <a href="#" class="hover:text-gray-500 max-lg:a-side-content"
+              ><span>HOME</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:text-gray-500"><span>ABOUT</span></a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-gray-500"><span>BUNGALOWS</span></a>
+          </li>
+          <li class="w-24 max-lg:hidden">
+            <img src="./LE LOTUS/Logo/Logo sans fond.png" class="" alt="logo" />
+          </li>
+          <li>
+            <a href="#" class="hover:text-gray-500"><span>RESERVATION</span></a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-gray-500"><span>BLOG</span></a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-gray-500"><span>CONTACT</span></a>
+          </li>
         </ul>
       </nav>
     </header>
-    <main >
-        <section class="flex-col flex justify-around text-center w-full bg-red-800 h-screen items-center">
-            <div class="bg-green-50 m-auto">
-                <h1 class=" text-4xl ">Le Lotus Bungalow</h1>
-                <p class="font-light">Séjournez dans nos Bungalows de Luxe</p>
+    <main>
+      <section
+        class="hero-section relative flex-col flex justify-around text-center w-full h-screen items-center"
+      >
+        <div
+          class="lg:m-auto text-white max-lg:w-full flex flex-col items-center justify-around text-left"
+        >
+          <h1 class="text-4xl playfair-display font-semibold">
+            Le Lotus Bungalow
+          </h1>
 
+          <p class="font-light text-sm">Stay in our luxury bungalows</p>
+        </div>
+        <form
+          action=""
+          class="bg-white lg:w-3/4 lg:h-24 absolute lg:-bottom-10 flex justify-around items-center check- shadow-black shadow-2xl max-lg:flex-col h-96 -bottom-72 w-10/12"
+        >
+          <div
+            class="flex border-r lg:h-full lg:w-1/4 flex-col items-center lg:justify-center h-full w-full bg-white justify-around"
+          >
+            <p class="text-gray-500 text-sm font-semibold">CHECK-IN</p>
+            <input type="date" name="" id="" class="outline-none w-3/4" />
+          </div>
+          <div
+            class="flex border-r lg:h-full lg:w-1/4 flex-col items-center justify-center h-full w-full bg-white"
+          >
+            <p class="text-gray-500 text-sm font-semibold">CHECK-OUT</p>
+            <input type="date" name="" id="" class="outline-none w-3/4" />
+          </div>
+          <div
+            class="flex border-r lg:h-full lg:w-1/4 flex-col items-center justify-center h-full w-full bg-white"
+          >
+            <p class="text-gray-500 text-sm font-semibold">ROOMS</p>
+            <select name="" id="" class="w-40 h-8 outline-none max-lg:w-3/4">
+              <option value="">
+                <p>0</p>
+              </option>
+              <option value="">
+                <p>1</p>
+              </option>
+              <option value="">
+                <p>2</p>
+              </option>
+              <option value="">
+                <p>3</p>
+              </option>
+            </select>
+          </div>
+          <div
+            class="flex border-r lg:h-full lg:w-1/4 flex-col items-center justify-center h-full w-full bg-white"
+          >
+            <p class="text-gray-500 text-sm font-semibold">CHILDREN</p>
+            <select name="" id="" class="w-40 h-8 outline-none max-lg:w-3/4">
+              <option value="">
+                <p>0</p>
+              </option>
+              <option value="">
+                <p>1</p>
+              </option>
+              <option value="">
+                <p>2</p>
+              </option>
+              <option value="">
+                <p>3</p>
+              </option>
+            </select>
+          </div>
+          <div
+            class="flex border-r lg:h-full lg:w-1/4 flex-col items-center justify-center h-full w-full bg-white"
+          >
+            <input
+              type="submit"
+              value="CHECK AVAILABILITY"
+              class="lg:w-3/4 h-2/5 check-avl text-xs flex items-center justify-around text-white font-semibold w-11/12"
+            />
+          </div>
+        </form>
+      </section>
+      <section
+        class="bg-white w-full lg:h-screen flex flex-col items-center justify-around pt-24 h-96"
+        id="about-us"
+      >
+        <p class="text-center text-gray-400 font-semibold text-sm">
+          LITTLE ABOUT US
+        </p>
+        <div
+          class="flex lg:w-2/3 lg:h-80 m-auto justify-around items-center max-lg:flex-col w-full h-5/6"
+        >
+          <article
+            class="about-img lg:w-4/12 lg:h-full about-us-img border-8 w-11/12 h-96 lg:mt-0 mt-52"
+          ></article>
+          <article
+            class="about-desc lg:w-6/12 lg:h-72 w-full h-96 lg:text-left text-center flex flex-col justify-around items-center"
+          >
+            <p
+              class="text-4xl font-bold playfair-display max-lg:w-11/12 text-left"
+            >
+              A best place to enjoy your life
+            </p>
+            <p
+              class="text-gray-500 text-sm lato-regular max-lg:w-11/12 text-left"
+            >
+              Welcome to our charming bungalow, nestled in a quiet and secure
+              environment. Perfect for those seeking to relax and escape the
+              hustle and bustle of everyday life, our bungalow offers an oasis
+              of tranquility where you can unwind in complete serenity.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section
+        class="bungalows h-screen w-11/12 m-auto flex flex-col overflow-hidden"
+      >
+        <article
+          class="w-full h-full flex items-center justify-around flex-col"
+        >
+          <div class="flex flex-col items-center justify-center w-full h-1/6">
+            <p class="text-center text-gray-400 font-semibold text-xs">
+              DISCOVER OUR ROOMS
+            </p>
+            <h2 class="playfair-display text-2xl">COZY INTERIOR</h2>
+          </div>
+          <article
+            class="h-5/6 w-full flex overflow-x-visible justify-around items-center"
+          >
+            <div
+              class="h-full card bg-white flex-col flex items-center justify-around hover:cursor-pointer shadow-black shadow-xl"
+            >
+              <div class="w-full h-1/2 bg-slate-500 bungalow-1"></div>
+              <div class="w-full h-1/2 flex flex-col pl-4 justify-around">
+                <h3 class="playfair-display font-semibold text-lg">
+                  COUPLE'S ROOM
+                </h3>
+                <p class="text-sm">
+                  <span class="font-semibold playfair-display text-lg"
+                    ><span class="text-xs">Ar</span
+                    ><span class="text-xl">85 000</span>
+                    <span class="text-sm">/per night</span></span
+                  >
+                </p>
+
+                <p class="text-sm">
+                  <span>Adults:</span><span class="text-gray-500">&nbsp;2</span>
+                </p>
+                <p class="text-sm">
+                  <span>Children:</span
+                  ><span class="text-gray-500">&nbsp;1</span>
+                </p>
+              </div>
             </div>
-        </section>
+            <div
+              class="h-full card bg-white flex-col flex items-center justify-around hover:cursor-pointer shadow-black shadow-xl"
+            >
+              <div class="w-full h-1/2 bg-slate-500 bungalow-2"></div>
+              <div class="w-full h-1/2 flex flex-col pl-4 justify-around">
+                <h3 class="playfair-display font-semibold text-lg">
+                  COUPLE'S ROOM
+                </h3>
+                <p class="text-sm">
+                  <span class="font-semibold playfair-display text-lg"
+                    ><span class="text-xs">Ar</span
+                    ><span class="text-xl">85 000</span>
+                    <span class="text-sm">/per night</span></span
+                  >
+                </p>
+
+                <p class="text-sm">
+                  <span>Adults:</span><span class="text-gray-500">&nbsp;2</span>
+                </p>
+                <p class="text-sm">
+                  <span>Children:</span
+                  ><span class="text-gray-500">&nbsp;1</span>
+                </p>
+              </div>
+            </div>
+            <div
+              class="h-full card bg-white flex-col flex items-center justify-around hover:cursor-pointer shadow-black shadow-xl"
+            >
+              <div class="w-full h-1/2 bg-slate-500 bungalow-3"></div>
+              <div class="w-full h-1/2 flex flex-col pl-4 justify-around">
+                <h3 class="playfair-display font-semibold text-lg">
+                  COUPLE'S ROOM
+                </h3>
+                <p class="text-sm">
+                  <span class="font-semibold playfair-display text-lg"
+                    ><span class="text-xs">Ar</span
+                    ><span class="text-xl">85 000</span>
+                    <span class="text-sm">/per night</span></span
+                  >
+                </p>
+
+                <p class="text-sm">
+                  <span>Adults:</span><span class="text-gray-500">&nbsp;2</span>
+                </p>
+                <p class="text-sm">
+                  <span>Children:</span
+                  ><span class="text-gray-500">&nbsp;1</span>
+                </p>
+              </div>
+            </div>
+            <div
+              class="h-full card bg-white flex-col flex items-center justify-around hover:cursor-pointer shadow-black shadow-xl"
+            >
+              <div class="w-full h-1/2 bg-slate-500 bungalow-4"></div>
+              <div class="w-full h-1/2 flex flex-col pl-4 justify-around">
+                <h3 class="playfair-display font-semibold text-lg">
+                  COUPLE'S ROOM
+                </h3>
+                <p class="text-sm">
+                  <span class="font-semibold playfair-display text-lg"
+                    ><span class="text-xs">Ar</span
+                    ><span class="text-xl">85 000</span>
+                    <span class="text-sm">/per night</span></span
+                  >
+                </p>
+
+                <p class="text-sm">
+                  <span>Adults:</span><span class="text-gray-500">&nbsp;2</span>
+                </p>
+                <p class="text-sm">
+                  <span>Children:</span
+                  ><span class="text-gray-500">&nbsp;1</span>
+                </p>
+              </div>
+            </div>
+          </article>
+          <div class="flex items-center h-20 w-40 justify-around ">
+            <div class="border rounded-l-2xl w-11/12 flex items-center h-1/2 justify-center">
+              <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="border  rounded-r-2xl w-11/12 flex items-center h-1/2 justify-center">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="lotus-pattern h-screen w-full"></section>
     </main>
   </body>
 </html>

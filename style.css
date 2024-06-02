@@ -1,0 +1,178 @@
+.lato-thin {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  .playfair-display{
+    font-family: "Playfair Display", serif;
+  }
+  
+  .lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .lato-thin-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .lato-light-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .lato-regular-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .lato-bold-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .lato-black-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+
+:root{
+    ---primary--- : #74BF40;
+    ---secondary--- : #F13FFF;
+    ---thirdy--- : #9659FF;
+}
+.hero-section{
+    background-image: url('LE LOTUS/EXTERIEUR/EXTERIEUR_02.JPG');
+    background-position: center;
+    background-size: cover;
+}
+.navbar{
+    background: #9659FF;
+}
+.check-{
+    border-top: #74BF40 3px solid;
+
+}
+.text-secondary{
+    color: var(---secondary---);
+
+}
+@media (max-width : 1024px) {
+  
+  #about-us{
+    background-image: url('./lotus\ pattern.png');
+    background-position: center;
+    background-size: contain;
+    height: 170dvh;
+  }
+}
+#about-us{
+  background-image: url('./lotus\ pattern.png');
+  background-position: center;
+  background-size: contain;
+  
+}
+.about-us-img{
+    background-image: url('LE LOTUS/EXTERIEUR/EXTERIEUR_07.JPG');
+    background-position: center;
+    background-size: cover;
+    border: #ffffff 8px solid;
+}
+body{
+    font-family: "Lato", sans-serif;
+}
+.check-avl{
+    background: var(---primary---);
+    
+}
+.logo{
+    background-image: url('LE LOTUS/Logo/Logo\ sans\ fond.png');
+    background-position: center ;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.circle-nav {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 480px;
+  width: 100%;
+  height: 500px;
+}
+.burgermenu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 6dvh;
+  right: 8dvw;
+
+}
+.circle-submenu{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.bungalow-1{
+  background-image: url('./LE LOTUS/BUNGALOW_06/BUNGALOW_06_3.JPG');
+  background-position: center;
+  background-size: cover;
+}
+.bungalow-2{
+  background-image: url('./LE LOTUS/BUNGALOW_02/BUNGALOW_02_1.JPG');
+  background-position: center;
+  background-size: cover;
+}
+.bungalow-3{
+  background-image: url('./LE LOTUS/BUNGALOW_02/BUNGALOW_02_3.JPG');
+  background-position: center;
+  background-size: cover;
+}
+.bungalow-4{
+  background-image: url('./LE LOTUS/BUNGALOW_08/BUNGALOW_08_1.JPG');
+  background-position: center;
+  background-size: cover;
+}
+.lotus-pattern{
+  background-image: url('./lotus\ pattern.png');
+  background-position: center;
+  background-size: contain;
+}
+html{
+  scrollbar-color: black white;
+scrollbar-arrow-color: #74BF40;
+}
+.card{
+  min-width: 33%;
+  margin-right: 20px;
+  height: 95%;
+}
+.slide{
+  transform: translate3d(-376px, 0px, 0px)
+}

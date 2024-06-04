@@ -1,6 +1,10 @@
 const navbar_top = document.querySelector(".navbar-top");
 let Lastscrolltop = 0;
 const move_up = document.querySelector(".move-up");
+const left_arrow = document.querySelector(".left_arrow")
+const right_arrow = document.querySelector(".right_arrow")
+const card_container = document.querySelector(".card-container")
+
 
 window.addEventListener("scroll", (e) => {
   let scrolltop = document.documentElement.scrollTop;
@@ -17,3 +21,17 @@ window.addEventListener("scroll", (e) => {
   }
   Lastscrolltop = scrolltop;
 });
+
+left_arrow.addEventListener('click',(e)=>{
+  card_container.classList.add('slide')
+  card_container.classList.remove('rev-slide')
+alert("hello worljiji")
+})
+right_arrow.addEventListener('click',(e)=>{
+  card_container.classList.add('rev-slide')
+  card_container.classList.remove('slide')
+
+alert("hello world")
+})
+
+

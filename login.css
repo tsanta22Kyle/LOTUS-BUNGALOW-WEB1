@@ -15,22 +15,36 @@ body{
     width: 80%;
     height: 80vh;
     margin-left: 10vw;
+    align-items: center;
+    justify-content: space-around;
 
 }
 .loginImg{
     width: 100%;
     background-image: url('./LE LOTUS/EXTERIEUR/EXTERIEUR_13.JPG');
     background-size: cover;
-    border-radius:2%;
+    height: 100%;
+    border-top-left-radius:2%;
 }
 h1,p{
     text-align: center;
     
 }
+.title{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 .loginText{
-    margin-left :5vw;
-    margin-top: 15vh;
+
+    margin-top: 5vh;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .nom,.date,.city,.mail,.motdepasse{
     padding: 2vh;
@@ -38,40 +52,62 @@ h1,p{
 }
 .nom{
     display: flex;
+    align-items: center;
     gap: 20px;
+    width: 100%;
 }
 .date{
     display: flex;
+    align-items: center;
     gap: 20px;
+    width: 100%;
 }
 .city{
     display: flex;
+    align-items: center;
     gap: 20px;
+    width: 100%;
 }
 .mail{
     display: flex;
+    align-items: center;
     gap: 20px;
+    width: 100%;
 }
 .motdepasse{
     display: flex;
+    align-items: center;
     gap: 20px;
+    width: 100%;
 }
 .input{
     width:100% ;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin-left: 7vw;
+    justify-content: space-around;
 }
+
 input{
     width: 40%;
-    padding: 0.5vh;
-    background-color: rgb(189, 169, 142);
+    padding: 1vh;
+    background-color: rgb(234, 233, 233);
+    border:none ;
+    outline: none;
 }
 .bouton{
     display: flex;
     gap: 15px;
     border:none;
+ 
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 button{
     padding: 1.5vh;
-    width: 35%;
+    width: 30%;
     background-color: rgb(33, 147, 138);
     border-radius: 8%;
  

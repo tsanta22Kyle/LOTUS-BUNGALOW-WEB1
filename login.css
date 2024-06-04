@@ -5,31 +5,46 @@
 }
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: blueviolet;
+    background-color: rgb(33, 147, 138);
 }
 .login{
     display: flex;
     background-color: rgb(255, 255, 255);
-    border-radius: 2%;
-    margin-top: 12vh;
-    width: 75%;
-    margin-left: 12vw;
+    border-radius: 1.5%;
+    margin-top: 10vh;
+    width: 80%;
+    height: 80vh;
+    margin-left: 10vw;
+    align-items: center;
+    justify-content: space-around;
 
 }
-.img{
-    width: 130%;
-    height: 60vh;
-    margin: 4vw;
+.loginImg{
+    width: 100%;
+    background-image: url('./LE LOTUS/EXTERIEUR/EXTERIEUR_13.JPG');
+    background-size: cover;
+    height: 100%;
+    border-top-left-radius:2%;
 }
 h1,p{
     text-align: center;
     
 }
+.title{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 .loginText{
-    margin-left :15vw;
-    margin-top: 15vh;
-    width: 90%;
-    padding: vh;
+
+    margin-top: 5vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .nom,.date,.city,.mail,.motdepasse{
     padding: 2vh;
@@ -37,40 +52,63 @@ h1,p{
 }
 .nom{
     display: flex;
+    align-items: center;
     gap: 20px;
+    width: 100%;
 }
 .date{
     display: flex;
+    align-items: center;
     gap: 20px;
+    width: 100%;
 }
 .city{
     display: flex;
+    align-items: center;
     gap: 20px;
+    width: 100%;
 }
 .mail{
     display: flex;
+    align-items: center;
     gap: 20px;
+    width: 100%;
 }
 .motdepasse{
     display: flex;
+    align-items: center;
     gap: 20px;
+    width: 100%;
 }
 .input{
     width:100% ;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin-left: 7vw;
+    justify-content: space-around;
 }
+
 input{
     width: 40%;
-    padding: 0.5vh;
-    background-color: burlywood;
+    padding: 1vh;
+    background-color: rgb(234, 233, 233);
+    border:none ;
+    outline: none;
 }
 .bouton{
     display: flex;
     gap: 15px;
+    border:none;
+ 
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 button{
-    padding: 1vh;
-    width: 35%;
-    background-color: blueviolet;
+    padding: 1.5vh;
+    width: 30%;
+    background-color: rgb(33, 147, 138);
     border-radius: 8%;
  
 }

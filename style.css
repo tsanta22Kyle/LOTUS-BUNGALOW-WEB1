@@ -140,7 +140,7 @@ body{
   right: 0;
 }
 .bungalow-1{
-  background-image: url('./LE LOTUS/BUNGALOW_06/BUNGALOW_06_3.JPG');
+  background-image: url('/LE LOTUS/BUNGALOW_06/BUNGALOW_06_3.JPG');
   background-position: center;
   background-size: cover;
 }

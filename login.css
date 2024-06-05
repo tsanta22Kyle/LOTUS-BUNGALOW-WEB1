@@ -108,7 +108,20 @@ input{
 button{
     padding: 1.5vh;
     width: 30%;
-    background-color: rgb(33, 147, 138);
+    background-color: rgb(8, 22, 21);
     border-radius: 8%;
+    color: aliceblue;
  
+}
+.gender{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+}
+.image{
+   height: 10%;
+   width: 10%;
 }

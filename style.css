@@ -3,6 +3,9 @@
     font-weight: 100;
     font-style: normal;
   }
+  body{
+    transition: all 1s ;
+  }
   .playfair-display{
     font-family: "Playfair Display", serif;
   }
@@ -67,10 +70,22 @@
     ---secondary--- : #F13FFF;
     ---thirdy--- : #9659FF;
 }
+.primary-color{
+  color: var(---primary---);
+}
+.second-color{
+  color: var(---secondary---);
+}
+.third-color{
+  color: var(---thirdy---);
+}
 .hero-section{
-    background-image: url('LE LOTUS/EXTERIEUR/EXTERIEUR_02.JPG');
+    /* background-image: url('LE LOTUS/EXTERIEUR/EXTERIEUR_02.JPG'); */
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
+    height: 120dvh;
+
 }
 .navbar{
     background: #9659FF;
@@ -175,4 +190,148 @@ scrollbar-arrow-color: #74BF40;
 }
 .slide{
   transform: translate3d(-376px, 0px, 0px)
+}
+
+.rev-slide{
+  transform: translate3d(376px, 0px, 0px)
+}
+.inactive{
+  color: gray;
+  cursor: default;
+  
+}
+.slides{
+  height: 100%;
+  display: flex;
+  width: 100%;
+  overflow-x: hidden;
+}
+.slider{
+  width: 100%;
+  height: 100%;
+ position: absolute;
+  /* border: black solid; */
+  left: 0;
+  top: 0;
+  /* background-image: url('./LE LOTUS/EXTERIEUR/EXTERIEUR_02.JPG'); */
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  transition: 1s;
+}
+.first{
+  background: linear-gradient(rgba(0, 0, 0, 0.189),rgba(0, 0, 0, 0.203)), url('./LE LOTUS/EXTERIEUR/EXTERIEUR_09.JPG');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  left: 0;
+}
+.second{
+  background:linear-gradient(rgba(0, 0, 0, 0.185),rgba(0, 0, 0, 0.185)) ,url('./LE LOTUS/Autre photo/320440588_487197823500915_8151231927458238268_n.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  left: 0;
+}
+.third{
+  background:  linear-gradient(rgba(0, 0, 0, 0.215),rgba(0, 0, 0, 0.187)), url('./LE LOTUS/Autre photo/157983783_759495578014822_6545127917929286829_n.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  left: 0;
+}
+/* .navigation-auto{
+  position: absolute;
+  background-color: #F13FFF;
+  width: 20dvw;
+  height: 4dvh;
+  bottom: 10dvh;
+  right: 0;
+} */
+.navigation-manual{
+  position: absolute;
+  background-color: #bcbcbc;
+  width: 15dvw;
+  height: 2dvh;
+  bottom: 10dvh;
+  right: 5dvw;
+  /* border-radius: 7px; */
+  display: flex;
+}
+.manual-btn{
+  /* border: black solid 1px; */
+  width: 33.333333%;
+  height: 100%;
+  /* background: #00000093; */
+}
+.manual-btn:hover{
+  background-color: white;
+}
+.slides input{
+  display: none;
+}
+#radio1:checked ~ .first{
+  opacity: 1;
+}
+#radio1:checked ~ .second{
+  /* left: -100%; */
+  opacity: 0;
+}
+#radio1:checked ~ .third{
+  /* left: -100%; */
+  opacity: 0;
+}
+#radio2:checked ~ .second{
+  /* left: 0; */
+  opacity: 1;
+}
+#radio2:checked ~ .first{
+  /* left: -100%; */
+  opacity: 0;
+}
+#radio2:checked ~ .third{
+  opacity: 0;
+  /* left: 100%; */
+}
+#radio3:checked ~ .third{
+  opacity: 1;
+  /* left: 0; */
+}
+#radio3:checked ~ .second{
+  opacity: 0;
+  /* left: -100%; */
+}
+#radio3:checked ~ .first{
+  opacity: 0;
+  /* left: -100%; */
+}
+.nav-item{
+  transition: 0.3s;
+  z-index: 1;
+  position: relative;
+}
+.nav-item::before{
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: white;
+  border-radius: 5px 5px 0 0;
+  opacity: 0 ;
+  transition: 0.3s;
+}
+.nav-item:not(.is-active):hover::before {
+  opacity: 1;
+}
+.nav-indicator{
+  position: absolute;
+  left: 0;
+  bottom: 7px;
+  height: 2px;
+  transition: 0.4s;
+  z-index: 1;
+  background: wheat;
+border-radius: 5px 5px 0 0 ;
 }

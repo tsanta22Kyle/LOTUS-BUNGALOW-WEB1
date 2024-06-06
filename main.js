@@ -4,6 +4,26 @@ const move_up = document.querySelector(".move-up");
 const left_arrow = document.querySelector(".left_arrow")
 const right_arrow = document.querySelector(".right_arrow")
 const card_container = document.querySelector(".card-container")
+// bg navbar effect :
+const navbar = document.querySelector(".navbar--");
+
+window.addEventListener("scroll",()=>{
+  let scroll = window.scrollY
+  if(scroll >450){
+    navbar_top.classList.remove('lg:hidden')
+    navbar_top.classList.add('lg:flex')
+    navbar.classList.add('navbar')
+  }else{
+    navbar_top.classList.add('lg:hidden')
+    navbar_top.classList.remove('lg:flex')
+    navbar.classList.remove('navbar')
+
+  }
+})
+
+
+
+
 
 
 window.addEventListener("scroll", (e) => {
@@ -25,13 +45,13 @@ window.addEventListener("scroll", (e) => {
 left_arrow.addEventListener('click',(e)=>{
   card_container.classList.add('slide')
   card_container.classList.remove('rev-slide')
-alert("hello worljiji")
+// alert("hello worljiji")
 })
 right_arrow.addEventListener('click',(e)=>{
   card_container.classList.add('rev-slide')
   card_container.classList.remove('slide')
 
-alert("hello world")
+// alert("hello world")
 })
 
 

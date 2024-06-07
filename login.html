@@ -16,14 +16,14 @@
           <p>The hotel of your dreams</p>
         </div>
 
-        <div class="input">
+        <form id="loginForm" class="input">
           <div class="nom">
             <label class="p2" for="name">Name:</label>
-            <input type="text" id="name" placeholder="name" />
+            <input type="text" id="name" placeholder="name" required />
           </div>
           <div class="date">
             <label class="p2" for="dob">Date of birth:</label>
-            <input type="date" id="dob" placeholder="date of birth" />
+            <input type="date" id="dob" placeholder="date of birth" required />
           </div>
           <div class="city">
             <label class="p2" for="city">City:</label>
@@ -35,24 +35,24 @@
           </div>
           <div class="motdepasse">
             <label class="p2" for="password">Password:</label>
-            <input type="password" id="password" placeholder="password" />
+            <input type="password" id="password" placeholder="password" required />
           </div>
           <div class="gender">
             <p class="p2">Gender:</p>
             <div class="gender-option">
-              <input type="radio" name="gender" id="male" />
+              <input type="radio" name="gender" id="male" value="male" required />
               <label for="male"><img class="image" src="homme.png" alt="Male" /></label>
             </div>
             <div class="gender-option">
-              <input type="radio" name="gender" id="female" />
+              <input type="radio" name="gender" id="female" value="female" required />
               <label for="female"><img class="image" src="femme.png" alt="Female" /></label>
             </div>
           </div>
-        </div>
-        <div class="bouton">
-          <button class="log">LOG IN</button>
-          <button>CANCEL</button>
-        </div>
+          <div class="bouton">
+            <button type="submit" class="log">LOG IN</button>
+            <button type="button" onclick="cancel()">CANCEL</button>
+          </div>
+        </form>
       </div>
     </div>
   </body>

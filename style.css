@@ -18,7 +18,12 @@
   .subtitle{
     color: #74bc44;
   }
- 
+  .nav-item{
+    text-decoration: none;
+    color: white;
+    text-decoration-line: none;
+    
+  }
   .lato-light {
     font-family: "Lato", sans-serif;
     font-weight: 300;
@@ -88,6 +93,7 @@
     ---secondary--- : #F13FFF;
     ---thirdy--- : #9659FF;
     ---low-gray---: #f7f7f7;
+    scroll-behavior: smooth;
 }
 .buttons-colors{
   color: white;
@@ -109,6 +115,9 @@
     background-attachment: fixed;
     height: 120dvh;
 
+}
+#check:checked ~ .hide{
+  transform: translateX(0);
 }
 .navbar{
     background: #945bfc;
@@ -159,10 +168,14 @@ body{
 .circle-nav {
   position: relative;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
+  align-items: center;
   max-width: 480px;
   width: 100%;
   height: 500px;
+}
+.hide{
+  transform: translateX(100%);
 }
 .burgermenu{
   display: flex;
@@ -170,8 +183,11 @@ body{
   align-items: center;
   position: absolute;
   top: 6dvh;
-  right: 8dvw;
+  right: 6dvw;
 
+}
+.hhide{
+  transform: translateX(-100%);
 }
 .circle-submenu{
   position: absolute;
@@ -417,7 +433,13 @@ border-radius: 5px 5px 0 0 ;
 .carroussel .slider-content{
   height: 500px;
   width: 350px;
-  background: #945bfc;
+  background: black;
+}
+.carroussel-lg .slider-content{
+  height: 500px;
+  width: 350px;
+  background: black;
+  
 }
 .img{
   width: 100%;
@@ -464,6 +486,16 @@ border-radius: 5px 5px 0 0 ;
   width: 735px;
   height: 100%;
 }
+.carroussel-lg{
+  display: grid;
+  grid-auto-flow: column;
+  gap: 18px;
+  grid-auto-columns: calc((100%/3)-12px);
+  overflow: hidden;
+  width: 350px;
+  height: 510px;
+}
+
 .wrapper {
   width: 100%;
   max-width: 2000px;

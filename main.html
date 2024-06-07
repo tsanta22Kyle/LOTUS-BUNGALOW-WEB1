@@ -28,15 +28,19 @@
       src="https://kit.fontawesome.com/a238f11e02.js"
       crossorigin="anonymous"
     ></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
     <script defer src="underline.js"></script>
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="./logo-site.ico" type="image/x-icon">
     <title>Lotus Bungalow</title>
   </head>
   <body class>
-    <header class="w-full">
+    
+    <header class="w-full lg:block hidden">
       <div
-        class="flex w-full items-center justify-between px-5 bg-transparent z-40 border-2 lg:hidden fixed top-0 h-28"
+        class="flex w-full items-center justify-between px-5 bg-transparent z-40 primary lg:hidden fixed top-0 h-28"
       >
         <!-- <img
           src="./LE%20LOTUS/Logo/Logo sans fond.png"
@@ -45,16 +49,16 @@
 
         /> -->
         <div class="logo h-full w-4/12"></div>
-        <input type="checkbox"  id="check" />
         <label for="check" class="burgermenu">
-          <i class="fa-solid fa-bars fa-2x" style="color: #000000"></i>
+          <i class="fa-solid fa-bars fa-2x text-white"></i>
         </label>
       </div>
       <nav
         class="lg:w-full w-full h-full fixed max-lg:absolute hidden lg:block bg-transparent transition-all duration-300 navbar-- z-40 lg:h-auto max-lg:circle-nav"
       >
-        <div
-          class="lg:hidden justify-between w-8/12 m-auto border-b relative border-gray-300 text-gray-300 hidden navbar-top transition-all duration-500 h-7"
+      <input type="checkbox"  id="check" />
+      <div
+      class="lg:hidden justify-between w-8/12 m-auto border-b relative border-gray-300 text-gray-300 hidden navbar-top transition-all duration-500 h-7"
         >
           <div
             class="move-up flex justify-around h-full w-full transition-all duration-500"
@@ -77,38 +81,38 @@
         >
           <!-- <div class="logo h-1/6 w-4/12"></div> -->
           <li>
-            <a href="#" class="max-lg:a-side-content"
-              ><span class="nav-item is-active" 
+            <a href="#home" class="max-lg:a-side-content"
+              ><span class="nav-item no-underline is-active" 
                 >HOME</span
               ></a
             >
           </li>
           <li>
-            <a href="#" class
-              ><span class="nav-item navi" >ABOUT</span></a
+            <a href="#about" class
+              ><span class="nav-item no-underline navi" >ABOUT</span></a
             >
           </li>
           <li>
-            <a href="#" class
-              ><span class="nav-item" >BUNGALOWS</span></a
+            <a href="#bungalows" class
+              ><span class="nav-item no-underline" >BUNGALOWS</span></a
             >
           </li>
           <li class="w-24 max-lg:hidden">
             <img src="./LE%20LOTUS/Logo/Logo%20sans%20fond.png" alt="logo" />
           </li>
           <li>
-            <a href="#" class
-              ><span class="nav-item" >RESERVATION</span></a
+            <a href="#resevation" class
+              ><span class="nav-item no-underline" >RESERVATION</span></a
             >
           </li>
           <li>
-            <a href="#" class
-              ><span class="nav-item" >BLOG</span></a
+            <a href="#food" class
+              ><span class="nav-item no-underline" >ourfood</span></a
             >
           </li>
           <li>
-            <a href="#" class
-              ><span class="nav-item" >CONTACT</span></a
+            <a href="#contact" class
+              ><span class="nav-item no-underline" >CONTACT</span></a
             >
           </li>
           <li class="nav-indicator"></li>
@@ -117,7 +121,7 @@
     </header>
     <main>
       <section
-        class="hero-section flex-col flex justify-around text-center w-full top-0 items-center"
+        class="hero-section flex-col flex justify-around text-center w-full top-0 items-center" id="home"
       >
         <div class="slides">
           <input type="radio" class="radio-btn" name="radio-btn" id="radio1" />
@@ -270,10 +274,10 @@
         </div>
       </section>
       <section
-        class="bungalows mt-20 h-screen w-11/12 m-auto flex bg-gray-10 items-center justify-around"
-      >
+        class="bungalows mt-20 h-screen w-11/12 m-auto flex bg-gray-10 items-center justify-around max-lg:flex-col"
+      id="bungalow">
         <article
-          class="slider-desc flex flex-col h-full w-1/3 items-center bg-late-500 justify-around pb-60"
+          class="slider-desc flex flex-col lg:h-full lg:w-1/3 items-center bg-late-500 justify-around lg:pb-60"
         >
           <p class="text-center text-gray font-semibold text-sm subtitle">
             discover our rooms
@@ -291,32 +295,32 @@
             relaxing and enjoyable experience.
           </p>
           <div
-            class="arrows-container bg-slate-0 w-32 flex items-center justify-between"
+            class="arrows-container bg-slate-0 w-32 flex items-center justify-between m-4"
           >
             <div
-              class="w-14 h-12 bg-white flex items-center justify-center fill-effect-button"
+              class="w-14 h-12 lg:bg-white flex items-center justify-center lg:fill-effect-button"
               id="leftArrow"
             >
               <i class="fa-solid fa-arrow-left fa-lg arrow"></i>
             </div>
 
             <div
-              class="arrow w-14 h-12 bg-white flex items-center justify-center fill-effect-button z-20"
+              class="arrow w-14 h-12 lg:bg-white flex items-center justify-center lg:fill-effect-button z-20"
               id="rightArrow"
             >
               <i class="fa-solid fa-arrow-right fa-lg"></i>
             </div>
           </div>
         </article>
-        <article class="slider-container flex h-full w-2/3">
+        <article class="slider-container flex max-lg:flex-col h-full lg:w-2/3">
           <div class="wrapper">
-            <ul class="carroussel lg:ml-7">
+            <ul class="lg:carroussel carroussel-lg  lg:ml-7">
               <li
                 class="slider-content shadow-md flex flex-col relative pb-6 bg-white justify-between "
               >
                 <div class="img w-full family-b"></div>
                 <div
-                  class="slider-content-desc ml-9 flex flex-col justify-around h-24"
+                  class="slider-content-desc lg:ml-9 flex flex-col justify-around h-24 max-lg:ml-4 "
                 >
                   <h1 class="font-semibold text-xl text-white">FAMILY BUNGALOW</h1>
                   <p class="desc">
@@ -397,6 +401,7 @@
           </div>
         </article>
       </section>
+      
     <section class="food-section py-16 bg-gray-100 lotus-pattern">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
@@ -530,32 +535,32 @@
             </div>
         </div>
     </section>
-    <!-- ------------------------ -->
-  <section class="flex flex-wrap lg:flex-nowrap justify-center items-center p-8 lg:p-16 bg-white">
-    <!-- Image Section -->
-    <div class="w-full lg:w-1/2 p-4">
+
+  <section class="flex flex-wrap lg:flex-nowrap justify-center items-center p-8 lg:p-0 bg-white shadow-md">
+  
+    <div class="w-full lg:w-full ">
       <img src="./billard.jpg" alt="Why Choose Us" class="w-full h-auto shadow-lg">
     </div>
 
-    <!-- Description Section -->
+  
     <div class="w-full lg:w-1/2 p-4">
       <h2 class="text-3xl md:text-4xl font-bold mb-6 playfair-display">Why Choose Us</h2>
       <ul class="space-y-4">
         <li class="flex items-center">
           <i class="fas fa-wifi text-2xl title mr-4"></i>
-          <span class="text-lg md:text-xl">Free WiFi</span>
+          <span class="text-lg md:text-xl text-gray-600">Free WiFi</span>
         </li>
         <li class="flex items-center">
           <i class="fas fa-utensils text-2xl title mr-4"></i>
-          <span class="text-lg md:text-xl">Restaurant / Pizzeria</span>
+          <span class="text-lg md:text-xl text-gray-600">Restaurant / Pizzeria</span>
         </li>
         <li class="flex items-center">
-          <i class="fas fa-billiards text-2xl title mr-4"></i>
-          <span class="text-lg md:text-xl">Billard</span>
+          <i class="fa-solid fa-bullseye text-2xl title mr-4"></i>
+          <span class="text-lg md:text-xl text-gray-600">Billard</span>
         </li>
         <li class="flex items-center">
           <i class="fas fa-swimmer text-2xl title mr-4"></i>
-          <span class="text-lg md:text-xl">Swimming Pool</span>
+          <span class="text-lg md:text-xl text-gray-600">Swimming Pool</span>
         </li>
       </ul>
     </div>

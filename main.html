@@ -9,12 +9,14 @@
       rel="stylesheet"
     />
     <script defer src="./main.js"></script>
+    <script src="slider.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,27 +30,28 @@
     ></script>
     <script defer src="underline.js"></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./logo-site.ico" type="image/x-icon">
     <title>Lotus Bungalow</title>
   </head>
-  <body class="">
-    <header class="w-full ">
+  <body class>
+    <header class="w-full">
       <div
-        class="flex w-full items-center justify-between px-5  bg-transparent z-40 border-2 lg:hidden fixed top-0 h-28"
+        class="flex w-full items-center justify-between px-5 bg-transparent z-40 border-2 lg:hidden fixed top-0 h-28"
       >
         <!-- <img
-          src="./LE LOTUS/Logo/Logo sans fond.png"
+          src="./LE%20LOTUS/Logo/Logo sans fond.png"
           class="i"
           alt="logo"
 
         /> -->
         <div class="logo h-full w-4/12"></div>
-        <input type="checkbox" name="" id="check" />
+        <input type="checkbox"  id="check" />
         <label for="check" class="burgermenu">
           <i class="fa-solid fa-bars fa-2x" style="color: #000000"></i>
         </label>
       </div>
       <nav
-        class="lg:w-full w-full h-full fixed max-lg:absolute lg:block bg-transparent transition-all duration-300 navbar-- z-40 lg:h-auto max-lg:circle-nav"
+        class="lg:w-full w-full h-full fixed max-lg:absolute hidden lg:block bg-transparent transition-all duration-300 navbar-- z-40 lg:h-auto max-lg:circle-nav"
       >
         <div
           class="lg:hidden justify-between w-8/12 m-auto border-b relative border-gray-300 text-gray-300 hidden navbar-top transition-all duration-500 h-7"
@@ -56,92 +59,103 @@
           <div
             class="move-up flex justify-around h-full w-full transition-all duration-500"
           >
-            <p class="">contact us directly at 034 31 377 32</p>
+            <p class>contact us directly at 034 31 377 32</p>
             <span
-              ><select name="" id="" class="outline-none bg-transparent">
-                <option value="">USD</option>
-                <option value="">EUR</option>
-                <option value="">MGA</option>
-                <option value="">CNY</option>
-                <option value="">JPY</option>
+              ><select class="outline-none bg-transparent">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="MGA">MGA</option>
+                <option value="CNY">CNY</option>
+                <option value="JPY">JPY</option>
               </select></span
             >
           </div>
         </div>
 
         <ul
-          class=" lg:flex flex lg:flex-row  items-center justify-around lg:w-8/12 w-1/2 z-50 m-auto text-sm text-white font-medium flex-col h-full top-0 max-lg:fixed right-0 max-lg:circle-submenu"
+          class="lg:flex flex lg:flex-row items-center justify-around lg:w-8/12 w-1/2 z-50 m-auto text-sm text-white font-medium flex-col h-full top-0 max-lg:fixed right-0 max-lg:circle-submenu"
         >
           <!-- <div class="logo h-1/6 w-4/12"></div> -->
           <li>
-            <a href="#" class=" max-lg:a-side-content"
-              ><span class="nav-item is-active " active-color="white">HOME</span></a
+            <a href="#" class="max-lg:a-side-content"
+              ><span class="nav-item is-active" 
+                >HOME</span
+              ></a
             >
           </li>
           <li>
-            <a href="#" class=""><span class="nav-item navi" active-color="white">ABOUT</span></a>
+            <a href="#" class
+              ><span class="nav-item navi" >ABOUT</span></a
+            >
           </li>
           <li>
-            <a href="#" class=""><span class="nav-item" active-color="white">BUNGALOWS</span></a>
+            <a href="#" class
+              ><span class="nav-item" >BUNGALOWS</span></a
+            >
           </li>
           <li class="w-24 max-lg:hidden">
-            <img src="./LE LOTUS/Logo/Logo sans fond.png" class="" alt="logo" />
+            <img src="./LE%20LOTUS/Logo/Logo%20sans%20fond.png" alt="logo" />
           </li>
           <li>
-            <a href="#" class=""><span class="nav-item" active-color="white">RESERVATION</span></a>
+            <a href="#" class
+              ><span class="nav-item" >RESERVATION</span></a
+            >
           </li>
           <li>
-            <a href="#" class=""><span class="nav-item" active-color="white">BLOG</span></a>
+            <a href="#" class
+              ><span class="nav-item" >BLOG</span></a
+            >
           </li>
           <li>
-            <a href="#" class=""><span class="nav-item" active-color="white">CONTACT</span></a>
+            <a href="#" class
+              ><span class="nav-item" >CONTACT</span></a
+            >
           </li>
-          <span class="nav-indicator"></span>
+          <li class="nav-indicator"></li>
         </ul>
       </nav>
     </header>
     <main>
       <section
-        class="hero-section  flex-col flex justify-around text-center w-full  top-0 items-center"
+        class="hero-section flex-col flex justify-around text-center w-full top-0 items-center"
       >
         <div class="slides">
-          <input type="radio" class="radio-btn" name="radio-btn" id="radio1">
-          <input type="radio" class="radio-btn" name="radio-btn" id="radio2">
-          <input type="radio" class="radio-btn" name="radio-btn" id="radio3">
+          <input type="radio" class="radio-btn" name="radio-btn" id="radio1" />
+          <input type="radio" class="radio-btn" name="radio-btn" id="radio2" />
+          <input type="radio" class="radio-btn" name="radio-btn" id="radio3" />
 
           <div class="slider first flex items-center justify-center">
             <div
-            class="lg:m-auto text-white max-lg:w-full flex flex-col items-center justify-around text-left"
-          >
-            <h1 class="text-4xl playfair-display font-semibold">
-              Le Lotus Bungalow
-            </h1>
-  
-            <p class="font-light text-sm">Stay in our cozy bungalows</p>
-          </div>
+              class="lg:m-auto text-white max-lg:w-full flex flex-col items-center justify-around text-left"
+            >
+              <h1 class="text-4xl playfair-display font-semibold">
+                Le Lotus Bungalow
+              </h1>
 
+              <p class="font-light text-sm">Stay in our cozy bungalows</p>
+            </div>
           </div>
           <div class="slider second flex items-center justify-center">
             <div
-            class="lg:m-auto text-white max-lg:w-full flex flex-col items-center justify-around text-left"
-          >
-            <h1 class="text-4xl playfair-display font-semibold">
-              Le Lotus Bungalow
-            </h1>
-  
-            <p class="font-light text-sm">Tasty meals every day</p>
-          </div>
+              class="lg:m-auto text-white max-lg:w-full flex flex-col items-center justify-around text-left"
+            >
+              <h1 class="text-4xl playfair-display font-semibold">
+                Le Lotus Bungalow
+              </h1>
+
+              <p class="font-light text-sm">Tasty meals every day</p>
+            </div>
           </div>
           <div class="slider third flex items-center justify-center">
             <div
-            class="lg:m-auto text-white max-lg:w-full flex flex-col items-center justify-around text-left"
-          >
-            <h1 class="text-4xl playfair-display font-semibold">
-              Le Lotus Bungalow
-            </h1>
-  
-            <p class="font-light text-sm">enjoy our various activities</p>
-          </div>
+              class="lg:m-auto text-white max-lg:w-full flex flex-col items-center justify-around text-left"
+            >
+              <h1 class="text-4xl playfair-display font-semibold">
+                Le Lotus Bungalow
+              </h1>
+
+              <p class="font-light text-sm">enjoy our various activities</p>
+            </div>
           </div>
           <!-- partie navigation automatique -->
           <div class="navigation-auto">
@@ -155,71 +169,60 @@
             <label for="radio2" class="manual-btn"></label>
             <label for="radio3" class="manual-btn"></label>
           </div>
-
         </div>
-
-
-
-
-
-
-
-
-
-
-
-        
         <form
-          action=""
           class="bg-white lg:w-3/4 lg:h-24 absolute lg:-bottom-12 flex justify-around items-center check- shadow-black shadow-2xl max-lg:flex-col h-96 -bottom-72 w-10/12"
         >
           <div
             class="flex border-r lg:h-full lg:w-1/4 flex-col items-center lg:justify-center h-full w-full bg-white justify-around"
           >
             <p class="text-gray-500 text-sm font-semibold">CHECK-IN</p>
-            <input type="date" name="" id="" class="outline-none w-3/4" />
+            <input type="date" class="outline-none w-3/4" />
           </div>
           <div
             class="flex border-r lg:h-full lg:w-1/4 flex-col items-center justify-center h-full w-full bg-white"
           >
             <p class="text-gray-500 text-sm font-semibold">CHECK-OUT</p>
-            <input type="date" name="" id="" class="outline-none w-3/4" />
+            <input type="date" class="outline-none w-3/4" />
           </div>
           <div
             class="flex border-r lg:h-full lg:w-1/4 flex-col items-center justify-center h-full w-full bg-white"
           >
             <p class="text-gray-500 text-sm font-semibold">ROOMS</p>
-            <select name="" id="" class="w-40 h-8 outline-none max-lg:w-3/4">
-              <option value="">
-                <p>0</p>
+            <select class="w-40 h-8 outline-none max-lg:w-3/4 bg-transparent">
+              <option value>
+                0
               </option>
-              <option value="">
-                <p>1</p>
+              <option value>
+                1
               </option>
-              <option value="">
-                <p>2</p>
+              <option value>
+                2
               </option>
-              <option value="">
-                <p>3</p>
+              <option value>
+                3
               </option>
             </select>
           </div>
           <div
             class="flex border-r lg:h-full lg:w-1/4 flex-col items-center justify-center h-full w-full bg-white"
           >
-            <p class="text-gray-500 text-sm font-semibold">CHILDREN</p>
-            <select name="" id="" class="w-40 h-8 outline-none max-lg:w-3/4">
-              <option value="">
-                <p>0</p>
+            <p class="text-gray-500 text-sm font-semibold ">CHILDREN</p>
+            <select class="w-40 h-8 outline-none max-lg:w-3/4 bg-transparent">
+              <option value>
+                0
               </option>
-              <option value="">
-                <p>1</p>
+              <option value>
+                1
               </option>
-              <option value="">
-                <p>2</p>
+              <option value>
+                2
               </option>
-              <option value="">
-                <p>3</p>
+              <option value>
+                3
+              </option>
+              <option value>
+                4
               </option>
             </select>
           </div>
@@ -238,7 +241,7 @@
         class="bg-white w-full lg:h-screen flex flex-col items-center justify-around pt-24 h-96"
         id="about-us"
       >
-        <p class="text-center text-gray-400 font-semibold text-sm">
+        <p class="text-center text-gray font-semibold text-sm subtitle">
           LITTLE ABOUT US
         </p>
         <div
@@ -251,7 +254,7 @@
             class="about-desc lg:w-6/12 lg:h-72 w-full h-96 lg:text-left text-center flex flex-col justify-around items-center"
           >
             <p
-              class="text-4xl font-bold playfair-display max-lg:w-11/12 text-left"
+              class="text-4xl font-bold playfair-display max-lg:w-11/12 text-left "
             >
               A best place to enjoy your life
             </p>
@@ -267,140 +270,298 @@
         </div>
       </section>
       <section
-        class="bungalows h-screen w-11/12 m-auto flex flex-col overflow-hidden"
+        class="bungalows mt-20 h-screen w-11/12 m-auto flex bg-gray-10 items-center justify-around"
       >
         <article
-          class="w-full h-full flex items-center justify-around flex-col"
+          class="slider-desc flex flex-col h-full w-1/3 items-center bg-late-500 justify-around pb-60"
         >
-          <div class="flex flex-col items-center justify-center w-full h-1/6">
-            <p class="text-center text-gray-400 font-semibold text-xs">
-              DISCOVER OUR ROOMS
-            </p>
-            <h2 class="playfair-display text-2xl">COZY INTERIOR</h2>
-          </div>
-          <article
-            class="h-5/6 w-full flex overflow-x-visible justify-around items-center card-container "
+          <p class="text-center text-gray font-semibold text-sm subtitle">
+            discover our rooms
+          </p>
+          <h2
+            class="text-4xl font-bold playfair-display max-lg:w-11/12 text-left "
+          >
+            warm and friendly rooms
+          </h2>
+          <p
+            class="text-gray-500 text-sm lato-regular max-lg:w-11/12 text-left"
+          >
+            designed to provide you with a cozy and comfortable stay. Each room
+            is carefully furnished with all the amenities you need for a
+            relaxing and enjoyable experience.
+          </p>
+          <div
+            class="arrows-container bg-slate-0 w-32 flex items-center justify-between"
           >
             <div
-              class="h-full card bg-white flex-col flex items-center justify-around hover:cursor-pointer shadow-black shadow-xl"
+              class="w-14 h-12 bg-white flex items-center justify-center fill-effect-button"
+              id="leftArrow"
             >
-              <div class="w-full h-1/2 bg-slate-500 bungalow-1"></div>
-              <div class="w-full h-1/2 flex flex-col pl-4 justify-around">
-                <h3 class="playfair-display font-semibold text-lg">
-                  COUPLE'S BUNGALOW
-                </h3>
-                <p class="text-sm">
-                  <span class="font-semibold playfair-display text-lg"
-                    ><span class="text-xs">Ar</span
-                    ><span class="text-xl">85 000</span>
-                    <span class="text-sm">/per night</span></span
-                  >
-                </p>
-
-                <p class="text-sm">
-                  <span>Adults:</span><span class="text-gray-500">&nbsp;2</span>
-                </p>
-                
-              </div>
+              <i class="fa-solid fa-arrow-left fa-lg arrow"></i>
             </div>
+
             <div
-              class="h-full card bg-white flex-col flex items-center justify-around hover:cursor-pointer shadow-black shadow-xl"
+              class="arrow w-14 h-12 bg-white flex items-center justify-center fill-effect-button z-20"
+              id="rightArrow"
             >
-              <div class="w-full h-1/2 bg-slate-500 bungalow-2"></div>
-              <div class="w-full h-1/2 flex flex-col pl-4 justify-around">
-                <h3 class="playfair-display font-semibold text-lg">
-                  FAMILY'S BUNGALOW SMALL
-                </h3>
-                <p class="text-sm">
-                  <span class="font-semibold playfair-display text-lg"
-                    ><span class="text-xs">Ar</span
-                    ><span class="text-xl">85 000</span>
-                    <span class="text-sm">/per night</span></span
-                  >
-                </p>
-
-                <p class="text-sm">
-                  <span>Adults:</span><span class="text-gray-500">&nbsp;2</span>
-                </p>
-                <p class="text-sm">
-                  <span>Children:</span
-                  ><span class="text-gray-500">&nbsp;1</span>
-                </p>
-              </div>
+              <i class="fa-solid fa-arrow-right fa-lg"></i>
             </div>
-            <div
-              class="h-full card bg-white flex-col flex items-center justify-around hover:cursor-pointer shadow-black shadow-xl"
-            >
-              <div class="w-full h-1/2 bg-slate-500 bungalow-3"></div>
-              <div class="w-full h-1/2 flex flex-col pl-4 justify-around">
-                <h3 class="playfair-display font-semibold text-lg">
-                  FAMILY'S BUNGALOW ULTRA
-                </h3>
-                <p class="text-sm">
-                  <span class="font-semibold playfair-display text-lg"
-                    ><span class="text-xs">Ar</span
-                    ><span class="text-xl">85 000</span>
-                    <span class="text-sm">/per night</span></span
-                  >
-                </p>
-
-                <p class="text-sm">
-                  <span>Adults:</span><span class="text-gray-500">&nbsp;2</span>
-                </p>
-                <p class="text-sm">
-                  <span>Children:</span
-                  ><span class="text-gray-500">&nbsp;2</span>
-                </p>
-              </div>
-            </div>
-            <div
-              class="h-full card bg-white flex-col flex items-center justify-around hover:cursor-pointer shadow-black shadow-xl"
-            >
-              <div class="w-full h-1/2 bg-slate-500 bungalow-4"></div>
-              <div class="w-full h-1/2 flex flex-col pl-4 justify-around">
-                <h3 class="playfair-display font-semibold text-lg">
-                  FAMILY'S BUNGALOW LARGE
-                </h3>
-                <p class="text-sm">
-                  <span class="font-semibold playfair-display text-lg"
-                    ><span class="text-xs">Ar</span
-                    ><span class="text-xl">85 000</span>
-                    <span class="text-sm">/per night</span></span
-                  >
-                </p>
-
-                <p class="text-sm">
-                  <span>Adults:</span><span class="text-gray-500">&nbsp;2</span>
-                </p>
-                <p class="text-sm">
-                  <span>Children:</span
-                  ><span class="text-gray-500">&nbsp;3</span>
-                </p>
-              </div>
-            </div>
-          </article>
-          <div class="flex items-center h-20 w-40 justify-around ">
-            <button class="border rounded-l-2xl w-11/12 flex items-center h-1/2 justify-center left_arrow">
-              <i class="fa-solid fa-arrow-left fa-lg primary-color"></i>
-            </button>
-          
-            <button type="button"  class="border  rounded-r-2xl w-11/12 flex items-center h-1/2 justify-center right_arrow">
-              <i class="fa-solid fa-arrow-right fa-lg primary-color"></i>
-            </button>
+          </div>
+        </article>
+        <article class="slider-container flex h-full w-2/3">
+          <div class="wrapper">
+            <ul class="carroussel lg:ml-7">
+              <li
+                class="slider-content shadow-md flex flex-col relative pb-6 bg-white justify-between "
+              >
+                <div class="img w-full family-b"></div>
+                <div
+                  class="slider-content-desc ml-9 flex flex-col justify-around h-24"
+                >
+                  <h1 class="font-semibold text-xl text-white">FAMILY BUNGALOW</h1>
+                  <p class="desc">
+                    The room provides a cozy atmosphere perfect for relaxing
+                    after a day of exploring.
+                  </p>
+                </div>
+                <div
+                  class="button-price flex items-center w-full justify-around"
+                >
+                  <div class="price">
+                    <p>
+                      <span class="price-- ">Ar 110.000</span>
+                      <span class="text-white">/per Night</span>
+                    </p>
+                  </div>
+                  <div class="button-book">
+                    <button>BOOK NOW</button>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="slider-content shadow-md flex flex-col relative pb-6 bg-white justify-between "
+              >
+                <div class="img couple-b"></div>
+                <div
+                  class="slider-content-desc ml-9 flex flex-col justify-around h-24"
+                >
+                  <h1 class="font-semibold text-xl text-white">COUPLE BUNGALOW</h1>
+                  <p class="desc">
+                    The room provides a cozy atmosphere perfect for relaxing
+                    after a day of exploring.
+                  </p>
+                </div>
+                <div
+                  class="button-price flex items-center w-full justify-around"
+                >
+                  <div class="price">
+                    <p>
+                      <span class="price-- ">Ar 85.000</span>
+                      <span class="text-white">/per Night</span>
+                    </p>
+                  </div>
+                  <div class="button-book">
+                    <button>BOOK NOW</button>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="slider-content shadow-md flex flex-col relative pb-6 bg-white justify-between "
+              >
+                <div class="img family-xl-b"></div>
+                <div
+                  class="slider-content-desc ml-9 flex flex-col justify-around h-24"
+                >
+                  <h1 class="font-semibold text-xl text-white">FAMILY XL BUNGALOW</h1>
+                  <p class="desc">
+                    The room provides a cozy atmosphere perfect for relaxing
+                    after a day of exploring.
+                  </p>
+                </div>
+                <div
+                  class="button-price flex items-center w-full justify-around"
+                >
+                  <div class="price">
+                    <p>
+                      <span class="price-- ">Ar 120.000</span>
+                      <span class="text-white">/per Night</span>
+                    </p>
+                  </div>
+                  <div class="button-book">
+                    <button>BOOK NOW</button>
+                  </div>
+                </div>
+              </li>
+              
+            </ul>
           </div>
         </article>
       </section>
-      <section class=" h-screen w-full flex ">
-
-      </section>
-      <!-- eto ambonin'ny main no crééenla le testiminials / commentaire -->
-      <section class="">
-
-      </section>
+    <section class="food-section py-16 bg-gray-100 lotus-pattern">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800">Our Delicious Foods</h2>
+                <p class="text-gray-600 mt-4">Indulge in our mouth-watering dishes, prepared with the freshest ingredients.</p>
+            </div>
+            <div class="flex justify-center mb-8">
+                <button class="category-button secondary text-white px-4 py-2   mx-2" data-category="breakfast">breakfast</button>
+                <button class="category-button secondary text-white px-4 py-2   mx-2" data-category="lunch">lunch</button>
+                <button class="category-button secondary text-white px-4 py-2   mx-2" data-category="dinner">Dinner</button>
+            </div>
+            <div id="breakfast" class="food-items flex flex-wrap justify-center">
+                <div class="food-card bg-white  shadow-lg overflow-hidden mx-2 mb-4 w-full sm:w-1/2 lg:w-1/3 xl:w-1/4">
+                    <img src="./LE%20LOTUS/PLATS/PLATS_03.JPG" alt="Food Item" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800">Delicious breakfast</h3>
+                        <p class="text-gray-600 mt-2">a little tasty breakfast from the morning .</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-gray-800 font-bold">Ar 10,000</span>
+                            <button class="primary text-white px-4 py-2  ">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="food-card bg-white  shadow-lg overflow-hidden mx-2 mb-4 w-full sm:w-1/2 lg:w-1/3 xl:w-1/4">
+                    <img src="./tasse-cafe-coeur-dessine-dans-mousse.jpg" alt="Food Item" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800">coffee made with love</h3>
+                        <p class="text-gray-600 mt-2">a little tasty breakfast from the morning .</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-gray-800 font-bold">Ar 5,000</span>
+                            <button class="primary text-white px-4 py-2  ">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="food-card bg-white  shadow-lg overflow-hidden mx-2 mb-4 w-full sm:w-1/2 lg:w-1/3 xl:w-1/4">
+                    <img src="./LE%20LOTUS/PLATS/PLATS_29.JPG" alt="Food Item" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800">Mine-sao of the house</h3>
+                        <p class="text-gray-600 mt-2">a little tasty breakfast from the morning .</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-gray-800 font-bold">Ar 7,000</span>
+                            <button class="primary text-white px-4 py-2  ">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+            <div id="lunch" class="food-items hidden flex flex-wrap justify-center">
+                <div class="food-card bg-white  shadow-lg overflow-hidden mx-2 mb-4 w-full sm:w-1/2 lg:w-1/3 xl:w-1/4">
+                    <img src="./LE%20LOTUS/PLATS/PLATS_16.JPG" alt="Food Item" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800">tasty squid</h3>
+                        <p class="text-gray-600 mt-2">our lunches will give you joy and satisfaction </p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-gray-800 font-bold">Ar 30,000</span>
+                            <button class="primary text-white px-4 py-2 ">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="food-card bg-white  shadow-lg overflow-hidden mx-2 mb-4 w-full sm:w-1/2 lg:w-1/3 xl:w-1/4">
+                    <img src="./LE%20LOTUS/PLATS/PLATS_18.JPG" alt="Food Item" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800">tasty chicken</h3>
+                        <p class="text-gray-600 mt-2">our lunches will give you joy and satisfaction </p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-gray-800 font-bold">Ar 25,000</span>
+                            <button class="primary text-white px-4 py-2 ">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="food-card bg-white  shadow-lg overflow-hidden mx-2 mb-4 w-full sm:w-1/2 lg:w-1/3 xl:w-1/4">
+                    <img src="./LE%20LOTUS/PLATS/PLATS_20.JPG" alt="Food Item" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800">raw vegetables</h3>
+                        <p class="text-gray-600 mt-2">our lunches will give you joy and satisfaction </p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-gray-800 font-bold">Ar 22,000</span>
+                            <button class="primary text-white px-4 py-2 ">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="food-card bg-white  shadow-lg overflow-hidden mx-2 mb-4 w-full sm:w-1/2 lg:w-1/3 xl:w-1/4">
+                    <img src="./LE%20LOTUS/PLATS/PLATS_22.JPG" alt="Food Item" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800">seafood kebabs</h3>
+                        <p class="text-gray-600 mt-2">our lunches will give you joy and satisfaction </p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-gray-800 font-bold">Ar 15,000</span>
+                            <button class="primary text-white px-4 py-2 ">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+            <div id="dinner" class="food-items hidden flex flex-wrap justify-center">
+               
+                <div class="food-card bg-white  shadow-lg overflow-hidden mx-2 mb-4 w-full sm:w-1/2 lg:w-1/3 xl:w-1/4">
+                    <img src="./LE LOTUS/PLATS/PLATS_25.JPG" alt="Food Item" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800">seafood kebabs</h3>
+                        <p class="text-gray-600 mt-2">end your day with a lovingly prepared dinner</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-gray-800 font-bold">Ar 30,000</span>
+                            <button class="primary text-white px-4 py-2 ">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="food-card bg-white  shadow-lg overflow-hidden mx-2 mb-4 w-full sm:w-1/2 lg:w-1/3 xl:w-1/4">
+                    <img src="./LE LOTUS/PLATS/PLATS_26.JPG" alt="Food Item" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800">Delicious Pizza</h3>
+                        <p class="text-gray-600 mt-2">end your day with a lovingly prepared dinner</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-gray-800 font-bold">Ar 30,000</span>
+                            <button class="primary text-white px-4 py-2 ">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="food-card bg-white  shadow-lg overflow-hidden mx-2 mb-4 w-full sm:w-1/2 lg:w-1/3 xl:w-1/4">
+                    <img src="./LE LOTUS/PLATS/PLATS_14.JPG" alt="Food Item" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800">roast chicken</h3>
+                        <p class="text-gray-600 mt-2">end your day with a lovingly prepared dinner</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-gray-800 font-bold">Ar 30,000</span>
+                            <button class="primary text-white px-4 py-2 ">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
     </main>
-    <!-- eo no mamorona footer -->
-    <footer>
-
+    <footer class="end">
+      <div class="text">
+        <h2>About</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur <br />
+          adipisicing elit. Labore vel, molestiae <br />
+          optio modi rerum ullam aliquam atque <br />
+          reiciendis quae veniam recusandae.
+        </p>
+      </div>
+      <div class="text">
+        <h2>Insurance</h2>
+        <p>Apply</p>
+        <p>Cost</p>
+        <p>EMI</p>
+        <p>Care</p>
+      </div>
+      <div class="text">
+        <h2>LifeCare</h2>
+        <p>GoodCare</p>
+        <p>Best</p>
+        <p>Affordable</p>
+        <p>Nice</p>
+      </div>
+      <div class="text">
+        <h2>Connect US</h2>
+        <p>Twitter</p>
+        <p>LinkedIn</p>
+        <p>Facebook</p>
+        <p>YouTube</p>
+      </div>
     </footer>
   </body>
 </html>

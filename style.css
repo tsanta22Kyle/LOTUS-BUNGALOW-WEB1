@@ -9,11 +9,29 @@
   .playfair-display{
     font-family: "Playfair Display", serif;
   }
-  
+  .title{
+    color: #945bfc;
+  }
+  main{
+    background: #f0f0f0;
+  }
+  .subtitle{
+    color: #74bc44;
+  }
+ 
   .lato-light {
     font-family: "Lato", sans-serif;
     font-weight: 300;
     font-style: normal;
+  }
+  .couple-b{
+    background-image: url('./LE LOTUS/BUNGALOW_02/BUNGALOW_02_2.JPG');
+  }
+  .family-b{
+    background-image: url('./LE LOTUS/BUNGALOW_05/BUNGALOW_05_1.JPG');
+  }
+  .family-xl-b{
+    background-image: url('./LE LOTUS/Autre photo/320494169_1157038838286640_3676855254497789635_n.jpg');
   }
   
   .lato-regular {
@@ -69,6 +87,11 @@
     ---primary--- : #74BF40;
     ---secondary--- : #F13FFF;
     ---thirdy--- : #9659FF;
+    ---low-gray---: #f7f7f7;
+}
+.buttons-colors{
+  color: white;
+  background: #f33cfc;
 }
 .primary-color{
   color: var(---primary---);
@@ -88,11 +111,11 @@
 
 }
 .navbar{
-    background: #9659ff85;
+    background: #945bfc;
     
 }
 .check-{
-    border-top: #74BF40 3px solid;
+    border-top: #f33cfc 3px solid;
 
 }
 .text-secondary{
@@ -124,7 +147,7 @@ body{
     font-family: "Lato", sans-serif;
 }
 .check-avl{
-    background: var(---primary---);
+    background: #f33cfc;
     
 }
 .logo{
@@ -155,8 +178,9 @@ body{
   top: 0;
   right: 0;
 }
+.bun
 .bungalow-1{
-  background-image: url('./LE LOTUS/BUNGALOW_06/BUNGALOW_06_3.JPG');
+  background-image: url('/LE LOTUS/BUNGALOW_06/BUNGALOW_06_3.JPG');
   background-position: center;
   background-size: cover;
 }
@@ -185,9 +209,13 @@ html{
 scrollbar-arrow-color: #74BF40;
 }
 .card{
-  min-width: 33%;
+  min-width: 48%;
   margin-right: 20px;
   height: 95%;
+  border-radius: 10px;
+}
+.card-container{
+  padding-block: 2rem;
 }
 .slide{
   transform: translate3d(-376px, 0px, 0px)
@@ -221,21 +249,21 @@ scrollbar-arrow-color: #74BF40;
   transition: 1s;
 }
 .first{
-  background: linear-gradient(rgba(0, 0, 0, 0.189),rgba(0, 0, 0, 0.203)), url('./LE LOTUS/EXTERIEUR/EXTERIEUR_09.JPG');
+  background: linear-gradient(rgba(0, 0, 0, 0.228),rgba(0, 0, 0, 0.288)), url('./LE LOTUS/EXTERIEUR/EXTERIEUR_09.JPG');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   left: 0;
 }
 .second{
-  background:linear-gradient(rgba(0, 0, 0, 0.185),rgba(0, 0, 0, 0.185)) ,url('./LE LOTUS/Autre photo/320440588_487197823500915_8151231927458238268_n.jpg');
+  background:linear-gradient(rgba(0, 0, 0, 0.269),rgba(0, 0, 0, 0.256)) ,url('./LE LOTUS/Autre photo/320440588_487197823500915_8151231927458238268_n.jpg');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   left: 0;
 }
 .third{
-  background:  linear-gradient(rgba(0, 0, 0, 0.215),rgba(0, 0, 0, 0.187)), url('./LE LOTUS/Autre photo/157983783_759495578014822_6545127917929286829_n.jpg');
+  background:  linear-gradient(rgba(0, 0, 0, 0.285),rgba(0, 0, 0, 0.29)), url('./LE LOTUS/Autre photo/157983783_759495578014822_6545127917929286829_n.jpg');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -253,7 +281,7 @@ scrollbar-arrow-color: #74BF40;
   position: absolute;
   background-color: #bcbcbc;
   width: 15dvw;
-  height: 2dvh;
+  height: .75dvh;
   bottom: 10dvh;
   right: 5dvw;
   /* border-radius: 7px; */
@@ -333,9 +361,161 @@ scrollbar-arrow-color: #74BF40;
   height: 2px;
   transition: 0.4s;
   z-index: 1;
-  background: wheat;
+  background: white;
 border-radius: 5px 5px 0 0 ;
 }
+.end{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 66px;
+  margin-top: 66px;
+  background-color: black;
+  color: white;
+
+}
+
+
 .black{
   color: black;
+}
+.carroussel .slider-content{
+  height: 500px;
+  width: 350px;
+  background: white;
+}
+.img{
+  width: 100%;
+  height: 200px;
+ 
+  background-position: center;
+  background-size: cover;
+}
+.desc{
+  color: #bcbcbc;
+}
+.price--{
+  /* color: #945bfc; */
+  color: #945bfc;
+  font-weight: 600;
+}
+.button-book button{
+  background: black;
+  color: #945bfc;
+  width: 120px;
+  height: 50px;
+  position: relative;
+  transition: all 1s;
+}
+.button-book button::before{
+  content: "";
+  background: #945bfc;
+  width: 50%;
+  height: 2px;
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+}
+.button-book button:hover{
+  background: white;
+  color: #945bfc;
+}
+.wrapper .carroussel{
+  display: grid;
+  grid-auto-flow: column;
+  gap: 18px;
+  grid-auto-columns: calc((100%/3)-12px);
+  overflow: hidden;
+  width: 735px;
+  height: 100%;
+}
+.wrapper {
+  width: 100%;
+  max-width: 2000px;
+}
+.arrow{
+  color: black;
+}
+.fill-effect-button {
+  position: relative;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: black;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  transition: color 0.3s;
+}
+
+.fill-effect-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: #945bfc;
+  transition: width 0.4s, height 0.4s, top 0.4s, left 0.4s;
+  border-radius: 50%;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+}
+
+.fill-effect-button:hover::before {
+  width: 300%;
+  height: 300%;
+  top: 50%;
+  left: 50%;
+}
+
+.fill-effect-button:hover {
+  color: black;
+}
+
+.fill-effect-button * {
+  position: relative;
+  z-index: 1;
+}
+
+.slider-content {
+    transition: transform 0.3s ease;
+}
+
+.slide-left {
+  transform: translateX(-100%);
+}
+
+.slide-right {
+  transform: translateX(100%);
+}
+.slider-wrapper {
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 100%;
+}
+.primary{
+  background: #945bfc;
+  transition: all 1s;
+
+}
+.primary:hover{
+  background-color: black;
+  
+}
+.secondary{
+  background: #f33cfc;
+}
+.secondary:hover{
+  background: #b22ebb;
+}
+.active-color{
+  color: white;
 }

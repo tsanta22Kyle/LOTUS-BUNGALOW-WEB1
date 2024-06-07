@@ -54,4 +54,7 @@ right_arrow.addEventListener('click',(e)=>{
 // alert("hello world")
 })
 
+// --------------------------------------------aniamtion section clique
+
+
 

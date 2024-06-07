@@ -3,8 +3,8 @@
     font-weight: 100;
     font-style: normal;
   }
-  body{
-    transition: all 2s ;
+  *{
+    transition: all 1s ;
   }
   .playfair-display{
     font-family: "Playfair Display", serif;
@@ -254,6 +254,7 @@ scrollbar-arrow-color: #74BF40;
   background-size: cover;
   background-attachment: fixed;
   left: 0;
+ transition: all 1s;
 }
 .second{
   background:linear-gradient(rgba(0, 0, 0, 0.269),rgba(0, 0, 0, 0.256)) ,url('./LE LOTUS/Autre photo/320440588_487197823500915_8151231927458238268_n.jpg');
@@ -261,6 +262,7 @@ scrollbar-arrow-color: #74BF40;
   background-size: cover;
   background-attachment: fixed;
   left: 0;
+  transition: all 1s;
 }
 .third{
   background:  linear-gradient(rgba(0, 0, 0, 0.285),rgba(0, 0, 0, 0.29)), url('./LE LOTUS/Autre photo/157983783_759495578014822_6545127917929286829_n.jpg');
@@ -268,15 +270,38 @@ scrollbar-arrow-color: #74BF40;
   background-size: cover;
   background-attachment: fixed;
   left: 0;
+  transition: all 1s;
 }
-/* .navigation-auto{
-  position: absolute;
-  background-color: #F13FFF;
-  width: 20dvw;
-  height: 4dvh;
-  bottom: 10dvh;
-  right: 0;
+/* @keyframes auto1 {
+0%{
+  opacity: 1;
+
+}
+25%{
+  opacity: 0;
+}
+75%{
+  opacity: 0;
+}
+100%{
+  opacity: 1;
+}
 } */
+.navigation-auto{
+  position: absolute;
+  background-color: #bcbcbc;
+  width: 15dvw;
+  height: .75dvh;
+  bottom: 10dvh;
+  right: 5dvw;
+  display: flex;
+}
+.auto-btn1,
+.auto-btn2,
+.auto-btn3{
+  width: 33.33333%;
+  height: 100%;
+}
 .navigation-manual{
   position: absolute;
   background-color: #bcbcbc;
@@ -286,12 +311,22 @@ scrollbar-arrow-color: #74BF40;
   right: 5dvw;
   /* border-radius: 7px; */
   display: flex;
+  opacity: 0;
 }
 .manual-btn{
   /* border: black solid 1px; */
   width: 33.333333%;
   height: 100%;
   /* background: #00000093; */
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: white;
+}
+#radio2:checked ~   .navigation-auto .auto-btn2{
+  background: white;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: white;
 }
 .manual-btn:hover{
   background-color: white;
@@ -382,7 +417,7 @@ border-radius: 5px 5px 0 0 ;
 .carroussel .slider-content{
   height: 500px;
   width: 350px;
-  background: white;
+  background: #945bfc;
 }
 .img{
   width: 100%;

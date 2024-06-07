@@ -47,3 +47,24 @@ document.querySelectorAll('.category-button').forEach(button => {
         document.getElementById(category).classList.remove('hidden');
     });
 });
+
+
+
+function autoslide (){
+    var counter = 1;
+    setInterval(function(){
+        document.getElementById('radio'+counter).checked = true;
+        
+        counter++
+        if(counter>3){
+            counter = 1;
+        }
+
+    },2000)
+}
+autoslide
+let i = 0
+while(i<20){
+    autoslide()
+i++
+}

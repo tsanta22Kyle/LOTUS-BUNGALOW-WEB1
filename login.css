@@ -7,7 +7,7 @@
   
   body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgb(33, 147, 138);
+    background-color: #9659ff;
   }
   
   .login {
@@ -41,7 +41,7 @@
   }
   
   h1 {
-    color: rgb(203, 85, 85);
+    color:#9659ff;
   }
   
   .title {
@@ -78,7 +78,7 @@
   }
   
   input {
-    width: 60%;
+    width: 45%;
     padding: 1vh;
     background-color: rgb(234, 233, 233);
     border: none;
@@ -88,6 +88,7 @@
   .bouton {
     display: flex;
     gap: 15px;
+    
     border: none;
     padding: 2vh;
     width: 100%;
@@ -105,7 +106,7 @@
   }
   
   .log {
-    background-color: rgb(33, 147, 138);
+    background-color: #9659ff;
   }
   
   .gender {
@@ -123,8 +124,8 @@
   }
   
   .image {
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
   }
   
   #loading {

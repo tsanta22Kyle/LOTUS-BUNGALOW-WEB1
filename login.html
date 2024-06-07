@@ -9,50 +9,54 @@
   </head>
   <body>
     <div class="login">
-      <div class="loginImg">
-       
-      </div>
+      <div class="loginImg"></div>
       <div class="loginText">
         <div class="title">
           <h1>LOTUS</h1>
-          <p>This Hotel is so good</p>
+          <p>The hotel of your dreams</p>
         </div>
 
-        <div class="input">
-          <div class="nom" id="name">
-            <p>Name:</p>
-            <input type="text" placeholder="name" />
+        <form id="loginForm" class="input">
+          <div class="nom">
+            <label class="p2" for="name">Name:</label>
+            <input type="text" id="name" placeholder="name" required />
           </div>
           <div class="date">
-            <p>Date of birth:</p>
-            <input type="date" placeholder="date of birth" />
+            <label class="p2" for="dob">Date of birth:</label>
+            <input type="date" id="dob" placeholder="date of birth" required />
           </div>
           <div class="city">
-            <p>city:</p>
-            <input type="text" placeholder="city" required />
+            <label class="p2" for="city">City:</label>
+            <input type="text" id="city" placeholder="city" required />
           </div>
-          <div class="mail" id="email">
-            <p>Email:</p>
-            <input type="email" placeholder="exemple@gmail.com" required />
+          <div class="mail">
+            <label class="p2" for="email">Email:</label>
+            <input type="email" id="email" placeholder="example@gmail.com" required />
           </div>
-          <div class="motdepasse" id="motDepasse">
-            <p>Password:</p>
-            <input type="password" placeholder="mot de passe" />
+          <div class="motdepasse">
+            <label class="p2" for="password">Password:</label>
+            <input type="password" id="password" placeholder="password" required />
           </div>
           <div class="gender">
-            <img class="image" src="homme.png" alt=""  />
-            <input  type="radio" name="sexe" id="male" />
-            <img class="image" src="femme.png" alt="" />
-            <input type="radio" name="sexe" id="femelle" />
-            <label for="male"></label>
-            <label for="femelle"></label>
+            <p class="p2">Gender:</p>
+            <div class="gender-option">
+              <input type="radio" name="gender" id="male" value="male" required />
+              <label for="male"><img class="image" src="homme.png" alt="Male" /></label>
+            </div>
+            <div class="gender-option">
+              <input type="radio" name="gender" id="female" value="female" required />
+              <label for="female"><img class="image" src="femme.png" alt="Female" /></label>
+            </div>
           </div>
-        </div>
-        <div class="bouton">
-          <button>LOG IN</button>
-          <button>CANCEL</button>
-        </div>
+          <div class="bouton">
+            <button type="submit" class="log">LOG IN</button>
+            <button type="button" onclick="cancel()">CANCEL</button>
+          </div>
+        </form>
       </div>
+    </div>
+    <div id="loading" class="loading">
+      <div class="spinner"></div>
     </div>
   </body>
 </html>

@@ -418,12 +418,21 @@ border-radius: 5px 5px 0 0 ;
 .end{
   display: flex;
   flex-wrap: wrap;
+
   justify-content: space-around;
   padding: 66px;
   margin-top: 66px;
   background-color: black;
   color: white;
 
+}
+h2{
+  color: #b22ebb;
+}
+p{
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 
